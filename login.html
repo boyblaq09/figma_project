@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ray Valley Farms</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <!-- Logo container -->
+        <div class="logo" >
+            <img src="./imgs/logo.png" alt="Ray Valley Logo" class="h-10 w-10">
+        </div>
+        <!-- Desktop navigation menu - hidden on mobile devices -->
+        <nav class="nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        <!-- Desktop login button - hidden on mobile devices -->
+        <a href="login.html" class="login btn-primary">Login</a>
+        <img src="./imgs/humburger.png" alt="Hamburger icon" class="humburger" id="hamburger-icon">
+    </header>
+
+
+    <!-- Backdrop overlay - darkens background when menu is open -->
+    <div class="mobile-menu-backdrop" id="menu-backdrop"></div>
+
+    <!-- Mobile Menu Overlay - slides in from the right -->
+    <div class="mobile-menu-overlay" id="mobile-menu">
+        <div class="mobile-menu-content">
+            <!-- Close button (X) for the mobile menu -->
+            <button class="mobile-menu-close" id="close-menu" aria-label="Close menu">x</button>
+
+            <nav class="mobile-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>   
+            </nav>
+
+             <!-- Login button in mobile menu -->
+            <a href="login.html" class="mobile-login btn-primary">Login</a>
+        </div>
+    </div>
+        <!-- Main Content of the Login Page -->
+    <main class="login-main">
+        <section class="login-page-container">
+            <div class="login-image-container">
+                <img src=".//imgs/farmer.webp" alt="Farmer working" class="login-image">
+            </div>
+            <div class="login-form-container">
+
+                <h2>Login to Your Account</h2>
+                <form class="login-form" action="#" method="post">
+                    <div class="form-group">
+                         <label for="email">Email Address:</label>
+                        <input type="email" id="email" name="email" 
+                        placeholder="your.email@example.com" required>
+                    </div>
+                   
+                    <div class="form-group">
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                    </div>
+                    
+
+                    <button type="submit" class="btn-primary">Login</button>
+                </form>
+
+                <p style="margin-top: var(--spacing-md); text-align: center; font-size: var(--font-size-sm);">
+                Don't have an account? <a href="signup.html" style="color: var(--color-primary);">Sign up here</a>
+                </p>
+            </div>
+        </section>
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <!-- About Section -->
+            <div class="footer-section">
+                <h3>About Ray Valley Farms</h3>
+                <p>Empowering farmers with technology and sustainable farming practices. We help realize your dreams of investing in Agriculture.</p>
+            </div>
+            
+            <!-- Quick Links Section -->
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="contact.html">Contact Us</a>
+            </div>
+            
+            <!-- Contact Section -->
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>Accra, Ghana</p>
+                <a href="tel:+233553306360">+233 55 330 6360</a>
+                <a href="mailto:olitech1010@gmail.com">olitech1010@gmail.com</a>
+            </div>
+            
+            <!-- Social Media Section -->
+            <div class="footer-section footer-social">
+                <h3>Follow Us</h3>
+                <div class="footer-social-icons">
+                    <img src=".//imgs/socials.png" alt="Social media icons" class="footer">
+                </div>
+                <p>Connect with us on social media for updates and farming tips.</p>
+            </div>
+        </div>
+        
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+            <p>&copy; 2025 Ray Valley Farms. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <!-- JavaScript file for hamburger menu functionality -->
+    <script src="./javascript/script.js"></script>
+</body>
+</html>
