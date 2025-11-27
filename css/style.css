@@ -159,6 +159,20 @@ button:hover{
     min-height: auto;
 }
 
+.hero-sect {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #1e4020;
+    color: white;
+    align-items: center;
+    margin: 300px;
+    border-radius: 15px;
+    padding: 30px 50px;
+    /* Ensure hero image is responsive */
+    min-height: auto;
+}
+
 .hero-content {
     display: flex;
     flex-direction: column;
@@ -1391,6 +1405,7 @@ footer .footer-container {
         max-width: 280px;
     }
 }
+
 
 
 
