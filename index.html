@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ray Valley Farms</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
 </head>
+
 <body>
     <header>
         <div>
@@ -26,13 +29,44 @@
         <img src="./imgs/humburger.png" alt="humburger menu" class="menu-icon" id="menu">
     </header>
 
-    <section class="sect1">
+        <!-- Backdrop overlay - darkens background when menu is open -->
+    <div class="mobile-menu-backdrop" id="menu-backdrop"></div>
+
+    <!-- Mobile Menu Overlay - slides in from the right -->
+    <div class="mobile-menu-overlay" id="mobile-menu">
+        <div class="mobile-menu-content">
+            <!-- Close button (X) for the mobile menu -->
+            <button class="mobile-menu-close" id="close-menu" aria-label="Close menu">×</button>
+            
+            <!-- Navigation links in mobile menu -->
+            <nav class="mobile-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+            
+            <!-- Login button in mobile menu -->
+            <a href="login.html" class="mobile-login btn-primary">Login</a>
+        </div>
+    </div>
+
+    <section class="hero">
         <div class="div1">
-           <h1>Epowerinrg Farmers With Tehnology </h1> 
-           <p>We help realie your dreams of investing in Agriulture, let's start with small things that an change the world, so we live happy andabundant life
+           <h1>Epowerinrg Farmers with Tehnology </h1> 
+           <p>We help realize your dreams of investing in Agriulture, let's start with small things that an change the world, so we live healthy and andabundant lives.
            </p>
-           <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione id facere quod reprehenderit natus distinctio.</p>
-           <button>Join now</button>See how it works
+           <p>At Ray Valley Farms, we combine traditional farming wisdom<br>
+                with modern technology to create sustainable agricultural solutions<br>
+                that benefit farmers and communities across Ghana.
+            </p>
+
+           <div class="hero-content-btn">
+                <button class="btn-primary">Join Now</button>
+                <button class="btn-secondary">See how it works→</button>
+            </div>
         </div>
         <div>
             <img src=".//imgs/corn-isolated 1@2x.png" alt="corn" width="450px" height="450px">
@@ -40,64 +74,94 @@
     </section>
 
          <h3>Follow the instructions for more</h3>
-    <section class="sect2">
+    <section class="hero">
            
         <div>
            <img src="./imgs/bag.png" alt="" width="250px" height="250px">
-           <h2>Innoculate</h2> 
-           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus ab corporis similique culpa suscipit itaque, a tempora quaerat earum pariatur.</p>
+           <h2>Plan Your Farm</h2>
+                <p>Start by planning your agricultural venture<br>
+                    with our expert guidance and support.<br>
+                    We help you choose the right crops and livestock.</p>
         </div>
         <div>
            <img src="./imgs/book.png" alt=""width="250px" height="250px" >
-           <h2>Sow the Seeds</h2> 
-           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus ab corporis similique culpa suscipit itaque, a tempora quaerat earum pariatur.</p>
+           <h2>Implement Technology</h2>
+                <p>Integrate modern farming technologies<br>
+                    to maximize your yield and efficiency.<br>
+                    From irrigation systems to farm management software
+                </p>
         </div>
         <div>
            <img src="./imgs/plant.png" alt="" width="250px" height="250px" >
-           <h2>Prune your Farm</h2> 
-           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus ab corporis similique culpa suscipit itaque, a tempora quaerat earum pariatur.</p>
+           <h2>Grow & Succeed</h2>
+                <p>Watch your farm thrive with our ongoing<br>
+                    support and training programs.<br>
+                    Join a community of successful farmers.
+                </p>
         </div>   
     </section>
 
-    <section class="sect3">
+    <section class="hero">
         <div>
             <img src="./imgs/Group 9.png" width="650px" height="650px">
         </div>
         <div>
             <h2>Make your Green</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate eum rerum quisquam corporis architecto iure, modi deleniti accusantium molestias quis esse obcaecati pariatur sunt optio porro quas quia nihil voluptates eius neque explicabo, fugit doloribus. Vitae ea quasi ex temporibus.</p>
-            <button>Watch Now</button>
+            <p>Transform your agricultural dreams into profitable reality.<br>
+                Our comprehensive farming solutions help you maximize yields,<br>
+                reduce costs, and build a sustainable agricultural business.<br>
+                Join hundreds of successful farmers who have transformed<br>
+                their lives through modern farming practices.</p>
+
+            <button class="btn-primary">▶ Watch Now</button>
         </div>
     </section>
 
-    <section class="sect4">
+    <section class="hero">
         <div class="div1">
             <h2>Livestock Farming</h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste ad quod libero ipsum corporis. Fugit tenetur quidem hic? Consectetur veritatis ea, quam adipisci tempora aspernatur similique odit odio praesentium explicabo fugit nostrum quis esse voluptatibus debitis asperiores accusantium incidunt inventore!</p>
-            <button>See Catalogue</button>See how it works
+            <p>Expert guidance for successful livestock farming operations.<br>
+            We provide comprehensive support for poultry, cattle, and<br>
+            other livestock farming. Our team helps you with breeding,<br>
+            feeding, health management, and market access to ensure<br>
+            your livestock farming venture is profitable and sustainable.</p>
+            <div class="lvbtn">
+                <button class="btn-primary">▶ See Catalogue</button>
+                <button class="btn-secondary">See how it works→</button>
+            </div>
         </div>
         <div><img src="./imgs/Group 10.png" alt="" width="450px" height="450px" >
         </div>
     </section>
 
-    <section class="sect5">
+    <section class="hero">
         <div>
             <img src="./imgs/5c55c7538c21c9029a0f48b3 1.png" alt="cash crop" width="450px" height="450px">
         </div>
         <div>
-            <h2>Download Our App Now</h2>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque totam perspiciatis, sed cumque placeat dignissimos debitis expedita, explicabo nemo quisquam laboriosam. Laboriosam sequi ab doloribus repellat esse, laborum necessitatibus blanditiis!</p>
-        <button>Farm Order</button>
+          <h1>Cash Cropping</h1>
+            <p>Maximize your returns with strategic cash crop cultivation.<br>
+            We specialize in maize, vegetables, and other high-value crops<br>
+            that thrive in Ghana's climate. Our experts provide soil analysis,<br>
+            crop selection guidance, and market connections to help you achieve<br>
+            maximum profitability from your farming investment.</p>
+
+            <button class="btn-primary">Farm Order</button>
         </div>
     </section>
 
-    <section class="sect6">
-        <div>
-            <h2>What we are doing at ray valley farms</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis iusto pariatur repellat provident velit corporis ut quia assumenda ab qui reiciendis, dolor porro ipsam impedit? Cum sit ipsa voluptatum nemo!</p>
-            <button>Join Now</button>
+    <section class="hero-sect">
+        <div class="">
+            <h2>What we are doing<br> at Ray Valley Farms?</h2>
+            <p>We are revolutionizing agriculture in Ghana by combining<br>
+                traditional farming knowledge with cutting-edge technology.<br>
+                Our mission is to empower farmers with the tools, training,<br>
+                and support they need to build successful and sustainable<br>
+                agricultural businesses that transform lives and communities.</p>
+
+            <button class="btn-primary">Join Now</button>
         </div>
-        <img src="./imgs/pngaaa 1.png" alt="" width="450px" height="400px">
+        <img src="./imgs/man.png" alt="man">
     </section>
     
     <footer>
@@ -108,14 +172,6 @@
                 <p>Empowering farmers with technology and sustainable farming practices. We help realize your dreams of investing in Agriculture.</p>
             </div>
             
-            <!-- Contact Section -->
-            <div class="footer-section">
-                <h3>Contact Us</h3>
-                <p>Accra, Ghana</p>
-                <a href="tel:+233553306360">+233 59 410 8076</a>
-                <a href="boyblaq09@gmail.com">boyblaq09@gmail.com</a>
-            </div>
-            
             <!-- Quick Links Section -->
             <div class="footer-section">
                 <h3>Quick Links</h3>
@@ -123,6 +179,14 @@
                 <a href="about.html">About Us</a>
                 <a href="gallery.html">Gallery</a>
                 <a href="contact.html">Contact Us</a>
+            </div>
+            
+            <!-- Contact Section -->
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>Accra, Ghana</p>
+                <a href="tel:+233553306360">+233 55 330 6360</a>
+                <a href="mailto:olitech1010@gmail.com">olitech1010@gmail.com</a>
             </div>
             
             <!-- Social Media Section -->
@@ -142,6 +206,7 @@
     </footer>
     <script src="./javascript/script.js"></script>
 </body>
-
 </html>
+</html>
+
 
