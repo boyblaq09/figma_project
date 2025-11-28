@@ -894,6 +894,15 @@ footer .footer-container {
         padding: 40px 50px; /* Moderate padding */
     }
 
+    .hero-sect {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px 20px; /* Reduced padding on mobile */
+        gap: 30px;
+        width: 100%;
+        align-items: center;
+    }
+
     .hero-content>h1 {
         font-size: 36px; /* Slightly smaller */
     }
@@ -1405,6 +1414,7 @@ footer .footer-container {
         max-width: 280px;
     }
 }
+
 
 
 
