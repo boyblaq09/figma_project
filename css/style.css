@@ -1331,6 +1331,7 @@ footer .footer-container {
        MOBILE CENTERING - Better Mobile View
        ============================================ */
     /* Center all text content on mobile for better readability */
+    .hero-sect,
     .hero-content,
     .money-content,
     .livestock-content,
@@ -1381,6 +1382,16 @@ footer .footer-container {
     .hero {
         padding: 20px 15px;
     }
+    .hero-sect {
+        flex-direction: column;
+        text-align: center;
+        padding: 200px 15px; /* Reduced padding on mobile */
+        gap: 30px;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        justify-items: center;   
+    }
 
     .hero-content>h1 {
         font-size: 24px;
@@ -1426,6 +1437,7 @@ footer .footer-container {
         max-width: 280px;
     }
 }
+
 
 
 
