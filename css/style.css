@@ -901,6 +901,8 @@ footer .footer-container {
         gap: 30px;
         width: 100%;
         align-items: center;
+        justify-content: center;
+        justify-items: center;
     }
 
     .hero-content>h1 {
@@ -1024,6 +1026,16 @@ footer .footer-container {
         text-align: center;
         padding: 30px 20px; /* Reduced padding on mobile */
         gap: 30px;
+    }
+    .hero-sect {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px 20px; /* Reduced padding on mobile */
+        gap: 30px;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        justify-items: center;   
     }
 
     .hero-content {
@@ -1414,6 +1426,7 @@ footer .footer-container {
         max-width: 280px;
     }
 }
+
 
 
 
